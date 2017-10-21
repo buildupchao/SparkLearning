@@ -34,7 +34,7 @@ object Task01 {
     val MOVIE_ID = movie(0)._1
     val usermovie = ratings.filter(_._2.equals(MOVIE_ID))
     val userRating = users.join(usermovie)
-    
+
     val result = userRating.map { x =>
       (x._2._2, 1)
     }.reduceByKey(_ + _)
