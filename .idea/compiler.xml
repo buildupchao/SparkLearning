@@ -11,6 +11,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="quarkx-common" target="1.8" />
+      <module name="quarkx-parent" target="1.5" />
       <module name="SparkLearning" target="1.8" />
     </bytecodeTargetLevel>
   </component>

@@ -12,7 +12,6 @@
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="scala-sdk-2.12.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.spark:spark-sql_2.11:2.1.0" level="project" />
     <orderEntry type="library" name="Maven: com.univocity:univocity-parsers:2.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.spark:spark-sketch_2.11:2.1.0" level="project" />
@@ -167,5 +166,6 @@
     <orderEntry type="library" name="Maven: org.spire-math:spire-macros_2.11:0.7.4" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.5" level="project" />
     <orderEntry type="library" name="Maven: com.chuusai:shapeless_2.11:2.0.0" level="project" />
+    <orderEntry type="library" name="scala-sdk-2.11.8" level="project" />
   </component>
 </module>
