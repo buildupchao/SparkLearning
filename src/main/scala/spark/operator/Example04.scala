@@ -17,7 +17,8 @@ object Example04 {
       .map(_.split(","))
       .map(x => (x(0), (x(1), x(2), x(3), 1)))
 
-    val result = rdd.mapValues(x => (x._1.toInt, x._2.toInt, x._3.toInt, x._4.toInt)).reduceByKey((x, y) => (x._1 + y._1, math.max(x._2, y._2), math.min(x._3, y._3), x._4 + y._4))
+    val result = rdd.mapValues(x => (x._1.toInt, x._2.toInt, x._3.toInt, x._4.toInt))
+      .reduceByKey((x, y) => (x._1 + y._1, math.max(x._2, y._2), math.min(x._3, y._3), x._4 + y._4))
       .map { case(x, y) => (x, y._1, y._2, y._3, (y._1.toDouble / y._4))}.collect
 
     result.foreach(println)
