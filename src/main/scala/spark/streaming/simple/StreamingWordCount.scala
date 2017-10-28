@@ -1,9 +1,7 @@
 package spark.streaming.simple
 
 import org.apache.spark.{HashPartitioner, SparkConf, SparkContext}
-import org.apache.spark.streaming.StreamingContext
-import org.scalatest.time.Seconds
-;
+import org.apache.spark.streaming.{Seconds, StreamingContext}
 
 object StreamingWordCount {
 

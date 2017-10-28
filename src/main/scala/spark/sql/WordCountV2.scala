@@ -26,8 +26,8 @@ class WordCountV2 {
     val DATA_PATH = datapath
     val spark = SparkSession.builder().config(conf).getOrCreate()
 
-    val result = spark.read.textFile(DATA_PATH).flatMap(_.split("\\s+"))
+ /*   val result = spark.read.textFile(DATA_PATH).flatMap(_.split("\\s+"))
       .groupByKey(x => x)
-      .
+      .*/
   }
 }

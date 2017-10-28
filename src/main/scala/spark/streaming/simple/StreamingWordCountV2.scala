@@ -9,6 +9,7 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
 object StreamingWordCountV2 {
 
   def main(args: Array[String]): Unit = {
+    val datapath = "src/main/resources/data/streaming/input"
     val conf = new SparkConf()
     conf.setAppName("StreamingWordCountV2")
     conf.setMaster("local")
@@ -16,7 +17,8 @@ object StreamingWordCountV2 {
     val sc = new SparkContext(conf)
     val ssc = new StreamingContext(sc, Seconds(1))
 
-    val lines = ssc.socketTextStream("master", 9999)
+    val lines = ssc.textFileStream(datapath)
+//    val lines = ssc.socketTextStream("master", 9999)
     val words = lines.flatMap(_.split(" "))
     val pairs = words.map((_, 1))
     val wordCounts = pairs.reduceByKey(_ + _)
@@ -27,12 +29,21 @@ object StreamingWordCountV2 {
     // Step 2
     //    wordCounts.saveAsTextFiles("/streaming/output")
 
-    // Step 4
-/*    wordCounts.foreachRDD(rdd => {
-      rdd.foreachPartition(partitionOfRecords => {
+    // Step 3
+    lines.transform(rdd => {
+      rdd.flatMap(_.split(" "))
+        .map((_, 1))
+        .reduceByKey(_ + _)
+    })
 
-      })
-    })*/
+    // Step 4
+    lines.foreachRDD(rdd => {
+      rdd.flatMap(_.split(" "))
+        .map((_, 1))
+        .reduceByKey(_ + _)
+        .take(10)
+        .foreach(println)
+    })
 
     ssc.start() // Start the computation
     ssc.awaitTermination() // Wait for the compatation to terminate

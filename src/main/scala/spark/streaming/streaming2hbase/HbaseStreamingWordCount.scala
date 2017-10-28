@@ -1,8 +1,7 @@
 package spark.streaming.streaming2hbase
 
-import org.apache.hadoop.hbase.HBaseConfiguration
+import org.apache.hadoop.hbase.{HBaseConfiguration, TableName}
 import org.apache.hadoop.hbase.client.{HTable, Put}
-import org.apache.hadoop.hbase.protobuf.generated.HBaseProtos.TableName
 import org.apache.hadoop.hbase.util.Bytes
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.streaming.{Minutes, Seconds, StreamingContext}
@@ -33,9 +32,9 @@ object HbaseStreamingWordCount {
 
     wordCounts.foreachRDD(rdd => {
       rdd.foreachPartition(partitionOfRecords => {
-        val tableName = "PageViewStream"
+        val tableName = "hamlet"
         val hbaseConf = HBaseConfiguration.create()
-        hbaseConf.set("hbase.zookeeper.quorum", "master:9092")
+        hbaseConf.set("hbase.zookeeper.quorum", "master:2181")
         val htable = new HTable(hbaseConf, TableName.valueOf(tableName))
         partitionOfRecords.foreach(pair => {
           val put = new Put(Bytes.toBytes(rdd.id))

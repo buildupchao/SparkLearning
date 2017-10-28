@@ -1,3 +1,4 @@
+/*
 package spark.high.movie
 
 import org.apache.spark.sql.SparkSession
@@ -16,13 +17,15 @@ object TopKMovieForFemale {
     val sc = spark.sparkContext
 
     // all female
+    import spark.implicits._
     val usersDF = spark.read.textFile(DATA_PATH + "/users.dat")
       .flatMap(_.split("::"))
       .map(x => (x(0), x(1)))
       .filter(x => (x._2 == 'F'))
-      .map(_._1)
+      .map(x => x._1)
       .toDF("UserID")
 
+    import spark.implicits._
     val ratingsDF = spark.read.textFile(DATA_PATH + "/ratings.dat")
       .flatMap(_.split("::"))
       .map(x => (x(0), x(1), x(2)))
@@ -39,7 +42,7 @@ object TopKMovieForFemale {
       .take(10)
       .toMap
 
-
+    import spark.implicits._
     val moviesDF = spark.read.textFile(DATA_PATH + "/movies.dat")
       .flatMap(_.split("::"))
       .map(x => (x(0), x(1)))
@@ -48,3 +51,4 @@ object TopKMovieForFemale {
     moviesDF.filter(x => movieRDD.contains(x(1))).select("Title").rdd.foreach(println)
   }
 }
+*/
