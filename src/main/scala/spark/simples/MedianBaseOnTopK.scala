@@ -5,7 +5,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 object MedianBaseOnTopK {
 
   def main(args: Array[String]): Unit = {
-    val conf = new SparkConf().setAppName("SparkWordCount").setMaster("local[*]")
+    val conf = new SparkConf().setAppName("MedianBaseOnTopK").setMaster("local[*]")
 
     val BASE_PATH = "src/main/resources/data"
     val sc = new SparkContext(conf)

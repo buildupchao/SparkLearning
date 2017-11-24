@@ -5,7 +5,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 object CountOnce2 {
 
   def main(args: Array[String]): Unit = {
-    val conf = new SparkConf().setAppName("Median").setMaster("local[*]")
+    val conf = new SparkConf().setAppName("CountOnce2").setMaster("local[*]")
 
     val BASE_PATH = "src/main/resources/data"
     val sc = new SparkContext(conf)

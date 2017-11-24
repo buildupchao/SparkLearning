@@ -9,10 +9,10 @@ import scala.collection.mutable
   *
   * 应用场景：搜索引擎及垂直搜索引擎中需要构建倒排索引，文本分析中有的场景也需要构建倒排索引。
   */
-object InvertedIndex {
+object InvertedIndex2 {
 
   def main(args: Array[String]): Unit = {
-    val conf = new SparkConf().setAppName("InvertedIndex").setMaster("local[*]")
+    val conf = new SparkConf().setAppName("InvertedIndex2").setMaster("local[*]")
 
     val BASE_PATH = "src/main/resources/data"
     val sc = new SparkContext(conf)
