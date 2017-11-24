@@ -1,4 +1,4 @@
-package spark.simples
+package spark.examples.simples;
 
 /**
   * 关于关系型运算的Join连接的数据倾斜状况。

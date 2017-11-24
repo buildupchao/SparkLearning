@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbf03939-2eab-435b-822a-99d33d0bb877" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/spark/simples/CountOnce.scala" afterPath="$PROJECT_DIR$/src/main/scala/spark/simples/CountOnce.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/spark/simples/CountOnce2.scala" afterPath="$PROJECT_DIR$/src/main/scala/spark/simples/CountOnce2.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/spark/simples/InvertedIndex.scala" afterPath="$PROJECT_DIR$/src/main/scala/spark/simples/InvertedIndex.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/spark/simples/MedianBaseOnTopK.scala" afterPath="$PROJECT_DIR$/src/main/scala/spark/simples/MedianBaseOnTopK.scala" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/spark/simples/CountOnce.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/spark/simples/CountOnce2.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/spark/simples/InvertedIndex.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/spark/simples/InvertedIndex2.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/spark/simples/Median.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/spark/simples/MedianBaseOnTopK.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/spark/simples/SkewJoin.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/spark/simples/SparkWordCount.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/spark/simples/TopK.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/spark/simples/TopKIp.scala" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/spark/simples/README.md" afterPath="$PROJECT_DIR$/src/main/scala/spark/examples/simples/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,19 +25,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="InvertedIndex2.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/spark/simples/InvertedIndex2.scala">
+      <file leaf-file-name="SecondSortOnSpark.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/sort/SecondSortOnSpark.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-              <folding>
-                <element signature="e#23#72#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="480">
+              <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,6 +72,19 @@
         <option value="$PROJECT_DIR$/src/main/scala/spark/simples/MedianBaseOnTopK.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/spark/simples/InvertedIndex.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/spark/simples/InvertedIndex2.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/spark/examples/sort/MyKey.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/spark/examples/simples/TopKIp.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/spark/examples/simples/TopK.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/spark/examples/simples/SparkWordCount.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/spark/examples/simples/MedianBaseOnTopK.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/spark/examples/simples/Median.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/spark/examples/simples/InvertedIndex2.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/spark/examples/simples/InvertedIndex.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/spark/examples/simples/CountOnce2.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/spark/examples/simples/CountOnce.scala" />
+        <option value="$PROJECT_DIR$/src/main/resources/data/examples/secondsort.txt" />
+        <option value="$PROJECT_DIR$/src/main/scala/spark/examples/sort/SecondSortKey.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/spark/examples/sort/SecondSortOnSpark.scala" />
       </list>
     </option>
   </component>
@@ -144,6 +170,15 @@
               <item name="SparkLearning" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sparklearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SparkLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -161,7 +196,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="spark" type="462c0819:PsiDirectoryNode" />
-              <item name="simples" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sparklearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SparkLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -186,6 +231,9 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="spark.simples" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\jangz\git\projects\SparkLearning\src\main\scala\spark\examples\simples" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -199,15 +247,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.InvertedIndex2">
+  <component name="RunManager" selected="Application.SecondSortOnSpark">
     <configuration name="CountOnce" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="spark.simples.*" />
+          <option name="PATTERN" value="spark.examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="spark.simples.CountOnce" />
+      <option name="MAIN_CLASS_NAME" value="spark.examples.CountOnce" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -222,11 +270,11 @@
     <configuration name="CountOnce2" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="spark.simples.*" />
+          <option name="PATTERN" value="spark.examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="spark.simples.CountOnce2" />
+      <option name="MAIN_CLASS_NAME" value="spark.examples.CountOnce2" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -241,11 +289,11 @@
     <configuration name="InvertedIndex" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="spark.simples.*" />
+          <option name="PATTERN" value="spark.examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="spark.simples.InvertedIndex" />
+      <option name="MAIN_CLASS_NAME" value="spark.examples.InvertedIndex" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -260,11 +308,11 @@
     <configuration name="InvertedIndex2" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="spark.simples.*" />
+          <option name="PATTERN" value="spark.examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="spark.simples.InvertedIndex2" />
+      <option name="MAIN_CLASS_NAME" value="spark.examples.InvertedIndex2" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -276,14 +324,14 @@
       <module name="sparklearning" />
       <envs />
     </configuration>
-    <configuration name="MedianBaseOnTopK" type="Application" factoryName="Application" temporary="true">
+    <configuration name="SecondSortOnSpark" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="spark.simples.*" />
+          <option name="PATTERN" value="spark.examples.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="spark.simples.MedianBaseOnTopK" />
+      <option name="MAIN_CLASS_NAME" value="spark.examples.sort.SecondSortOnSpark" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -377,19 +425,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.MedianBaseOnTopK" />
-      <item index="1" class="java.lang.String" itemvalue="Application.InvertedIndex" />
-      <item index="2" class="java.lang.String" itemvalue="Application.CountOnce" />
-      <item index="3" class="java.lang.String" itemvalue="Application.CountOnce2" />
-      <item index="4" class="java.lang.String" itemvalue="Application.InvertedIndex2" />
+      <item index="0" class="java.lang.String" itemvalue="Application.InvertedIndex" />
+      <item index="1" class="java.lang.String" itemvalue="Application.CountOnce" />
+      <item index="2" class="java.lang.String" itemvalue="Application.CountOnce2" />
+      <item index="3" class="java.lang.String" itemvalue="Application.InvertedIndex2" />
+      <item index="4" class="java.lang.String" itemvalue="Application.SecondSortOnSpark" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.InvertedIndex2" />
-        <item index="1" class="java.lang.String" itemvalue="Application.CountOnce2" />
-        <item index="2" class="java.lang.String" itemvalue="Application.CountOnce" />
-        <item index="3" class="java.lang.String" itemvalue="Application.InvertedIndex" />
-        <item index="4" class="java.lang.String" itemvalue="Application.MedianBaseOnTopK" />
+        <item index="0" class="java.lang.String" itemvalue="Application.SecondSortOnSpark" />
+        <item index="1" class="java.lang.String" itemvalue="Application.InvertedIndex2" />
+        <item index="2" class="java.lang.String" itemvalue="Application.CountOnce2" />
+        <item index="3" class="java.lang.String" itemvalue="Application.CountOnce" />
+        <item index="4" class="java.lang.String" itemvalue="Application.InvertedIndex" />
       </list>
     </recent_temporary>
   </component>
@@ -411,12 +459,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511488305601</updated>
-      <workItem from="1511488308533" duration="10590000" />
+      <workItem from="1511488308533" duration="12484000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10590000" />
+    <option name="totallyTimeSpent" value="12484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -427,11 +475,11 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -600,7 +648,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/simples/README.md">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/simples/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
@@ -611,7 +659,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/simples/CountOnce2.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/CountOnce2.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="53" lean-forward="false" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
@@ -619,7 +667,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/simples/CountOnce.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/CountOnce.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="10" column="52" lean-forward="false" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
@@ -627,7 +675,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/simples/Median.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/Median.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="5" column="60" lean-forward="false" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
@@ -635,7 +683,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/simples/MedianBaseOnTopK.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/MedianBaseOnTopK.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="59" lean-forward="false" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
@@ -643,7 +691,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/simples/SkewJoin.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/SkewJoin.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
@@ -651,7 +699,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/simples/SparkWordCount.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/SparkWordCount.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
@@ -659,7 +707,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/simples/TopK.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/TopK.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="541">
           <caret line="28" column="11" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
@@ -667,7 +715,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/simples/TopKIp.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/TopKIp.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="541">
           <caret line="28" column="11" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
@@ -675,7 +723,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/simples/InvertedIndex.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/InvertedIndex.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
@@ -683,13 +731,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/simples/InvertedIndex2.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/InvertedIndex2.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+        <state relative-caret-position="280">
+          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/simples/TopKIp.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="49" lean-forward="false" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/simples/TopK.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="49" lean-forward="false" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/simples/SparkWordCount.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="49" lean-forward="false" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/simples/SkewJoin.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="18" column="7" lean-forward="false" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/simples/MedianBaseOnTopK.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="49" lean-forward="false" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/simples/Median.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="2" column="49" lean-forward="false" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/simples/InvertedIndex2.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
           <folding>
-            <element signature="e#23#72#0" expanded="true" />
+            <element signature="e#32#81#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/simples/InvertedIndex.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <folding>
+            <element signature="e#32#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/simples/CountOnce2.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="49" lean-forward="false" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/simples/CountOnce.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.jar!/scala/Predef.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.1.0/spark-core_2.11-2.1.0-sources.jar!/org/apache/spark/rdd/OrderedRDDFunctions.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="49" column="32" lean-forward="false" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data/examples/secondsort.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/sort/SecondSortKey.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/sort/SecondSortOnSpark.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,4 +1,4 @@
-package spark.simples
+package spark.examples.simples
 
 import org.apache.spark.{SparkConf, SparkContext}
 
