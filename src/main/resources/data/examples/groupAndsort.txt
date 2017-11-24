@@ -1,0 +1,13 @@
+jangz,23,male,98
+John,34,male,100
+Tom,45,male,99
+Lily,32,female,40
+Linda,34,female,100
+Chaces,28,male,98
+Dong,29,male,30
+Daniel,33,male,100
+Marvin,24,male,100
+Chaos,30,female,84
+Mei,23,female,90
+Newhire,18,female,100
+Summer,59,male,90
