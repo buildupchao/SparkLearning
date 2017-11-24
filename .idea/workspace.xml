@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fbf03939-2eab-435b-822a-99d33d0bb877" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/data/examples/groupAndsort.txt" afterPath="$PROJECT_DIR$/src/main/resources/data/examples/groupAndsort.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/spark/examples/topk/top/Top3GroupByGenderExample.scala" afterPath="$PROJECT_DIR$/src/main/scala/spark/examples/topk/top/Top3GroupByGenderExample.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Top3GroupByGenderExample.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/topk/top/Top3GroupByGenderExample.scala">
+      <file leaf-file-name="GroupByAgeDescScoreExample.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/topk/groupsort/GroupByAgeDescScoreExample.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+            <state relative-caret-position="160">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -85,7 +87,6 @@
         <option value="$PROJECT_DIR$/src/main/scala/spark/examples/topk/Person.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/spark/examples/topk/groupsort/Person.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/spark/examples/topk/top/Document.scala" />
-        <option value="$PROJECT_DIR$/src/main/resources/data/examples/groupAndsort.txt" />
         <option value="$PROJECT_DIR$/src/main/scala/spark/examples/topk/top/User.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/spark/examples/topk/top/MyKey.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/spark/examples/topk/top/MySparkPartitioner.scala" />
@@ -93,6 +94,8 @@
         <option value="$PROJECT_DIR$/src/main/scala/spark/examples/sort/SortByValueOnSpark.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/spark/examples/topk/top/Top3GroupBySubjectExample.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/spark/examples/topk/top/Top3GroupByGenderExample.scala" />
+        <option value="$PROJECT_DIR$/src/main/resources/data/examples/groupAndsort.txt" />
+        <option value="$PROJECT_DIR$/src/main/scala/spark/examples/topk/groupsort/GroupByAgeDescScoreExample.scala" />
       </list>
     </option>
   </component>
@@ -235,6 +238,17 @@
               <item name="spark" type="462c0819:PsiDirectoryNode" />
               <item name="examples" type="462c0819:PsiDirectoryNode" />
               <item name="topk" type="462c0819:PsiDirectoryNode" />
+              <item name="groupsort" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sparklearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SparkLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="topk" type="462c0819:PsiDirectoryNode" />
               <item name="top" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -276,15 +290,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Top3GroupByGenderExample">
-    <configuration name="CountOnce" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="Application.GroupByAgeDescScoreExample">
+    <configuration name="CountOnce2" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="spark.examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="spark.examples.CountOnce" />
+      <option name="MAIN_CLASS_NAME" value="spark.examples.CountOnce2" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -296,14 +310,14 @@
       <module name="sparklearning" />
       <envs />
     </configuration>
-    <configuration name="CountOnce2" type="Application" factoryName="Application" temporary="true">
+    <configuration name="GroupByAgeDescScoreExample" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="spark.examples.*" />
+          <option name="PATTERN" value="spark.examples.topk.groupsort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="spark.examples.CountOnce2" />
+      <option name="MAIN_CLASS_NAME" value="spark.examples.topk.groupsort.GroupByAgeDescScoreExample" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -454,19 +468,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.CountOnce" />
-      <item index="1" class="java.lang.String" itemvalue="Application.CountOnce2" />
-      <item index="2" class="java.lang.String" itemvalue="Application.InvertedIndex2" />
-      <item index="3" class="java.lang.String" itemvalue="Application.SecondSortOnSpark" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Top3GroupByGenderExample" />
+      <item index="0" class="java.lang.String" itemvalue="Application.CountOnce2" />
+      <item index="1" class="java.lang.String" itemvalue="Application.InvertedIndex2" />
+      <item index="2" class="java.lang.String" itemvalue="Application.SecondSortOnSpark" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Top3GroupByGenderExample" />
+      <item index="4" class="java.lang.String" itemvalue="Application.GroupByAgeDescScoreExample" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Top3GroupByGenderExample" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SecondSortOnSpark" />
-        <item index="2" class="java.lang.String" itemvalue="Application.InvertedIndex2" />
-        <item index="3" class="java.lang.String" itemvalue="Application.CountOnce2" />
-        <item index="4" class="java.lang.String" itemvalue="Application.CountOnce" />
+        <item index="0" class="java.lang.String" itemvalue="Application.GroupByAgeDescScoreExample" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Top3GroupByGenderExample" />
+        <item index="2" class="java.lang.String" itemvalue="Application.SecondSortOnSpark" />
+        <item index="3" class="java.lang.String" itemvalue="Application.InvertedIndex2" />
+        <item index="4" class="java.lang.String" itemvalue="Application.CountOnce2" />
       </list>
     </recent_temporary>
   </component>
@@ -488,12 +502,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511488305601</updated>
-      <workItem from="1511488308533" duration="20970000" />
+      <workItem from="1511488308533" duration="21522000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20970000" />
+    <option name="totallyTimeSpent" value="21522000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -541,14 +555,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/data/example/Persons.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/data/example/Aliases.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -887,14 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/data/examples/groupAndsort.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/data/examples/samples.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -951,10 +949,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data/examples/groupAndsort.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/topk/top/Top3GroupByGenderExample.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark/examples/topk/groupsort/GroupByAgeDescScoreExample.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>

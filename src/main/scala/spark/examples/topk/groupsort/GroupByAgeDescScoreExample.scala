@@ -1,8 +1,8 @@
-package spark.examples.topk.top
+package spark.examples.topk.groupsort
 
 import org.apache.spark.{SparkConf, SparkContext}
 
-object Top3GroupByGenderExample {
+object GroupByAgeDescScoreExample {
 
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf().setAppName("Top3GroupByGenderExample").setMaster("local[*]")
@@ -13,17 +13,17 @@ object Top3GroupByGenderExample {
     val data = sc.textFile(BASE_PATH + "/groupAndsort.txt")
 
     val pairs = data.map(_.split(","))
-      .map(document => (document(2), (document(0), document(1), document(2), document(3).toInt)))
-        .groupByKey()
+      .map(document => (document(1).toInt, (document(0), document(1).toInt, document(2), document(3).toInt)))
+      .groupByKey()
 
     // 元组自定义排序
-    implicit  val sorting = new Ordering[(String, String, String, Int)] {
-      override def compare(x: (String, String,String,  Int), y: (String, String, String, Int)): Int = {
+    implicit  val sorting = new Ordering[(String, Int, String, Int)] {
+      override def compare(x: (String, Int,String,  Int), y: (String, Int, String, Int)): Int = {
         -x._4.compareTo(y._4)
       }
     }
 
-    val result = pairs.mapValues(x => x.toList.sorted(sorting).take(3))
+    val result = pairs.mapValues(x => x.toList.sorted(sorting))
 
     result.foreach(println)
 
