@@ -1,0 +1,7 @@
+id1 spark hadoop
+id2 scala spark
+id3 java hadoop spark
+id4 scala java
+id5 the spark
+id6 the hadoop and spark
+id7 hadoop Flink storm spark
