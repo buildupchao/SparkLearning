@@ -5,7 +5,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 object GroupByAgeDescScoreExample {
 
   def main(args: Array[String]): Unit = {
-    val conf = new SparkConf().setAppName("Top3GroupByGenderExample").setMaster("local[*]")
+    val conf = new SparkConf().setAppName("GroupByAgeDescScoreExample").setMaster("local[*]")
 
     val BASE_PATH = "src/main/resources/data/examples"
     val sc = new SparkContext(conf)
