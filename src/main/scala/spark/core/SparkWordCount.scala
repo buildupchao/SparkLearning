@@ -28,7 +28,7 @@ object SparkWordCount {
       ("coffee", 5),
       ("street", 2),
       ("panda", 5)))
-    input.groupByKey().map(x => (x._1, x._2.sum.toDouble/x._2.size)).foreach(println)
+    input.groupByKey().map(x => (x._1, x._2, x._2.sum, x._2.sum.toDouble/x._2.size)).foreach(println)
 
     sc.stop()
   }
